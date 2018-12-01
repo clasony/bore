@@ -18,27 +18,22 @@
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:https://github.com/javaee-samples/javaee7-simple-sample.git</connection>
-        <url>https://github.com/javaee-samples/javaee7-simple-sample.git</url>
-        <developerConnection>scm:git:https://github.com/javaee-samples/javaee7-simple-sample.git</developerConnection>
+        <connection>scm:git:https://github.com/clasony/bore.git</connection>
+        <url>https://github.com/clasony/bore.git</url>
+        <developerConnection>scm:git:https://github.com/clasony/bore.git</developerConnection>
         <tag>v1.5</tag>
     </scm>
-    <developers>
-        <developer>
-            <name>Arun Gupta</name>
-            <email>arun.gupta@gmail.com</email>
-        </developer>
-    </developers>
-    <distributionManagement>
-        <repository>
+    
+   <distributionManagement>
+     <!--   <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
             <url>http://localhost:8081/nexus/content/repositories/releases/</url>
-        </repository>
+        </repository> -->
         <snapshotRepository>
-            <id>deployment</id>
+            <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+            <url>http://192.168.1.104:8083/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <build>
